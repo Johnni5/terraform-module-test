@@ -1,4 +1,7 @@
-variable "sec_port_range" {
-  type = list(number)
-  description = "Port Numbers for Security Group"
+variable "webname" {
+  type = string
+}
+
+variable "ec2_ami" {
+  description = "AWS AMI description and specifics"
 }
