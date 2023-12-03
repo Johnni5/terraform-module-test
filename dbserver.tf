@@ -10,7 +10,7 @@ resource "aws_instance" "db_server" {
 
 data "aws_ami" "ec2_ami" {
   most_recent = true
-  owners      = ["099720109477"]
+  owners      = ["<YOUR_OWNER-ID>"] // start creating process of instance, copy ami-id, search under public-ami -> OWNER-ID
 
   filter {
     name   = "name"
